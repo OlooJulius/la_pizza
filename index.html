@@ -118,8 +118,6 @@
             <p><strong>Boere- $10</strong></p>
             <p data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Basil, Pecorino romano">Toppings
               Info <i class="fa fa-info-circle"></i></p>
-            <p data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Basil, Pecorino romano">Crust
-              Info <i class="fa fa-info-circle"></i></p>
             <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
           </div>
         </article>
@@ -129,8 +127,6 @@
             <p><strong>Boerewors - $8</strong></p>
             <p data-toggle="tooltip" title="Homemade mozzarella, ricotta, Pecorino romano">Toppings Info <i
                 class="fa fa-info-circle"></i></p>
-            <p data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Basil, Pecorino romano">Crust
-              Info <i class="fa fa-info-circle"></i></p>
             <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
           </div>
         </article>
@@ -140,8 +136,6 @@
             <p><strong>Chicken- $12</strong></p>
             <p data-toggle="tooltip" title="Imported tomato sauce, Oregano, Garlic, Pecorino romano">Toppings Info <i
                 class="fa fa-info-circle"></i></p>
-            <p data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Basil, Pecorino romano">Crust
-              Info <i class="fa fa-info-circle"></i></p>
             <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
           </div>
         </article>
@@ -149,13 +143,9 @@
           <div class="thumbnail">
             <img src="./images/hawain.jpeg" alt="Pizza3">
             <p><strong>Hawain - $12</strong></p>
-            <p data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Basil, Pecorino romano">Crust
-              Info <i class="fa fa-info-circle"></i></p>
             <p data-toggle="tooltip"
               title="Lightly fried dough, Homemade marinara sauce, Homemade mozzarella, Pecorino romano">Toppings Info
               <i class="fa fa-info-circle"></i></p>
-            <p data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Basil, Pecorino romano">Crust
-              Info <i class="fa fa-info-circle"></i></p>
             <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
           </div>
         </article>
@@ -165,8 +155,6 @@
             <p><strong>Periperi - $12</strong></p>
             <p data-toggle="tooltip" title="Vodka sauce, Homemade mozzarella, Basil, Pecorino romano">Toppings Info <i
                 class="fa fa-info-circle"></i></p>
-            <p data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Basil, Pecorino romano">Crust
-              Info <i class="fa fa-info-circle"></i></p>
             <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
           </div>
         </article>
@@ -177,8 +165,6 @@
             <p data-toggle="tooltip"
               title="Imported tomato sauce, Homemade mozzarella, Eggplant, Ricotta, Pecorino romano">Toppings Info <i
                 class="fa fa-info-circle"></i></p>
-            <p data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Basil, Pecorino romano">Crust
-              Info <i class="fa fa-info-circle"></i></p>
             <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
           </div>
         </article>
@@ -189,8 +175,6 @@
             <p data-toggle="tooltip"
               title="Homemade pesto, Homemade mozzarella, Asiago, Pecorino romano (No olive oil)">Toppings Info <i
                 class="fa fa-info-circle"></i></p>
-            <p data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Basil, Pecorino romano">Crust
-              Info <i class="fa fa-info-circle"></i></p>
             <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
           </div>
         </article>
@@ -201,15 +185,60 @@
             <p data-toggle="tooltip"
               title="Imported tomato sauce, Homemade mozzarella, Homemade meatballs, Ricotta, Basil, Pecorino romano">
               Toppings Info <i class="fa fa-info-circle"></i></p>
-            <p data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Basil, Pecorino romano">Crust
-              Info <i class="fa fa-info-circle"></i></p>
             <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
           </div>
         </article>
       </div>
     </div>
   </section>
+  <!-- end menu -->
 
+  <!-- start Modal-->
+  <section class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-shopping-cart"></span>Order</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group"><label for="qty">QUANTITY</label>
+              <input type="number" class="form-control" id="qty" placeholder="How many?">
+            </div>
+            <div class="form-group"><label>SIZE</label>
+              <div class="radio">
+                <label class="radio-inline"><input type="radio" name="optradio">Small 9"</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Medium 12"</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Large 16"</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sel1">CRUST</label>
+              <select class="form-control" id="sel1">
+                <option>Original Hand Tossed</option>
+                <option>Thin Crust</option>
+                <option>Deep Pan</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-block">ADD
+              <span class="glyphicon glyphicon-ok"></span>
+            </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- end Model -->
 </body>
 
 </html>
